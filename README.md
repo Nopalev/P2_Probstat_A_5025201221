@@ -99,3 +99,30 @@ Kesimpulannya adalah tidak ada perbedaan rata-rata kedua populasi
 ## No 4
 
 Membaca dataset online dapat menggunakan fungsi `read.table` seperti pada contoh [berikut](https://www.statology.org/r-read-table/)
+
+Kemudian, dataset dikelompokkan menjadi beberapa grup sesuai dengan yang dijelaskan pada soal dan disimpan dalam tipe numerik
+
+![image](https://media.discordapp.net/attachments/872527165240004652/980514091489689600/unknown.png)
+
+Dan berikut adalah hasil plotnya
+
+![Grup1](https://media.discordapp.net/attachments/872527165240004652/980514276856975430/unknown.png)
+
+![Grup2](https://cdn.discordapp.com/attachments/872527165240004652/980514344704020490/unknown.png)
+
+![Grup3](https://cdn.discordapp.com/attachments/872527165240004652/980514399221600256/unknown.png)
+
+
+Dari plot diatas tampak bahwa setiap grup homogen
+
+> b
+
+Homogenitas varians dapat dicari dengan fungsi `bartlett.test`
+
+Berikut adalah implementasi dan hasil
+
+![image](https://cdn.discordapp.com/attachments/872527165240004652/980515999474409522/unknown.png)
+
+Dengan nilai p sebesar 0.8054 (lebih besar daripada 0.05) sehingga setiap grup adalah homogen
+
+> c

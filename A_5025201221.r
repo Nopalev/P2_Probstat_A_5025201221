@@ -40,12 +40,31 @@ lower
 
 # no 4
 
+# a
+
 Dataset = read.table("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")
 
-Grup1 = subset(Dataset, V1 == "1")
+temp = subset(Dataset, V1 == "1")
+Grup1 <- as.numeric((temp$V2))
 Grup1
-Grup2 = subset(Dataset, V1 == "2")
+temp = subset(Dataset, V1 == "2")
+Grup2 <- as.numeric((temp$V2))
 Grup2
-Grup3 = subset(Dataset, V1 == "3")
+temp = subset(Dataset, V1 == "3")
+Grup3 <- as.numeric((temp$V2))
 Grup3
 
+qqnorm(Grup1)
+qqline(Grup1)
+
+qqnorm(Grup2)
+qqline(Grup2)
+
+qqnorm(Grup3)
+qqline(Grup3)
+
+# b
+
+bartlett.test(list(Grup1, Grup2, Grup3))
+
+# no 5
