@@ -112,7 +112,6 @@ Dan berikut adalah hasil plotnya
 
 ![Grup3](https://cdn.discordapp.com/attachments/872527165240004652/980514399221600256/unknown.png)
 
-
 Dari plot diatas tampak bahwa setiap grup homogen
 
 > b
